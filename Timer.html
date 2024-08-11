@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .saatkutu {
+            display: none;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div style="    display: flex;
+    justify-content: center;">
+        <div class="menubar">
+            <a href="index.html" style="margin: 0;">Clock</a>
+            <a href="Timer.html">Timer</a>
+            <a href="secuntamer.html" class="links">secuntamer</a>
+        </div>
+    </div>
+    <audio>
+        <source src="src/Alarm.mp3" type="audio/mpeg">
+    </audio>
+    <center>
+        <div class="saatkutu">
+            <H1 class="Secuntamer"></H1>
+        </div>
+    </center>
+    <center>
+        <div class="ayarla">z
+            <table>
+                <td>
+                    <p>Hours</p>
+                    <h1 id="hours">0</h1>
+                    <button class="Az">-</button>
+                    <button class="cok">+</button>
+                <td>
+                    <p>Min</p>
+                    <h1 id="minute">0</h1>
+                    <button class="Az1">-</button>
+                    <button class="cok1">+</button>
+                </td>
+                <td>
+                    <p>Sec</p>
+                    <h1 id="seconds">0</h1>
+                    <button class="Az2">-</button>
+                    <button class="cok2">+</button>
+                </td>
+            </table>
+        </div>
+    </center>
+    <div class="setting">
+        <button id="button" style="opacity: 0.2;
+        cursor: not-allowed;">cancel</button>
+        <button style="margin-left: 200px;" onclick="start()" id="button2">Start</button>
+        <button style="margin-left: 200px;display: none;" id="button3">Pause</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
